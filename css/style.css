@@ -1,5 +1,7 @@
 body{
    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 html{
     font-size: 16px;
@@ -68,6 +70,11 @@ header{
           
 
                         /*slider-main*/
+.slider-baslik{
+    color: white;
+    margin-left: 70px;
+    font-size: 25px;
+}
 #slider-movie{
     margin-bottom: 180px;
 }
@@ -77,28 +84,32 @@ header{
   white-space: nowrap;
 
 }
-#exampleSlider .MS-content .item {
-  display: inline-block;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  vertical-align: top;
-  margin-left: 2px;
-  width: 26%;
+#exampleSlider .MS-content .item{
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+    width: 245px;
+    height: 350px;
+    cursor: pointer;
+
 }
-#exampleSlider .MS-content .item p {
-  line-height: 1;
-  vertical-align: middle;
-  margin: 0;
-  padding: 10px 0;
+#exampleSlider .MS-content .item:hover{
+    opacity: 0.5;
 }
+#exampleSlider .MS-content .item img{
+    width: 100%;
+    height: 100%;
+       border-radius: 5px;
+    }
+
 #exampleSlider .MS-controls button {
     color: white;
   position: absolute;
   border: none;
   font-size: 30px;
   outline: 0;
-  top: 650px;
   cursor: pointer;
   background-color: transparent;
 }
@@ -108,10 +119,64 @@ header{
 }
 #exampleSlider .MS-controls .MS-left {
   left: 10px;
+     top: 770px;
 }
 
 #exampleSlider .MS-controls .MS-right {
   right: 10px;
+    top: 770px;
+}
+
+
+/*2.slider*/
+#exampleSlider2 .MS-content {
+  margin: 15px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+
+
+}
+#exampleSlider2 .MS-content .item{
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 245px;
+    height: 350px;
+    cursor: pointer;
+
+}
+#exampleSlider2 .MS-content .item:hover{
+    opacity: 0.5;
+}
+#exampleSlider2 .MS-content .item img{
+    width: 100%;
+    height: 100%;
+     border-radius: 5px;
+    
+    }
+
+#exampleSlider2 .MS-controls button {
+    color: white;
+  position: absolute;
+  border: none;
+  font-size: 30px;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#exampleSlider2 .MS-controls button:hover {
+  cursor: pointer;
+}
+#exampleSlider2 .MS-controls .MS-left {
+  left: 10px;
+     top: 1180px;
+}
+
+#exampleSlider2 .MS-controls .MS-right {
+  right: 10px;
+    top: 1180px;
 }
 
 
